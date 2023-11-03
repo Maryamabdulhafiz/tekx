@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+body .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 50px;
+  box-shadow: 1px 1px 5px 5px #dedede;
+}
+body .nav .search-bar {
+  position: relative;
+}
+body .nav .search-bar #input {
+  width: 25rem;
+  height: 30px;
+  background-color: gainsboro;
+  border: transparent;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding-top: 15px;
+}
+body .nav svg {
+  position: absolute;
+  top: -14%;
+  width: 20px;
+  left: 1rem;
+}
+body .nav .half-nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+body .nav .logo {
+  width: 120px;
+  height: 50px;
+}
+body .nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  padding-right: 20px;
+}
+body .nav-img {
+  display: none;
+}
+body .main-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+body .main-body img {
+  width: 25rem;
+}
+body .main-body .btn {
+  display: flex;
+  flex-direction: row;
+  width: 25rem;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+body .main-body .btn .btn-color {
+  padding: 20px;
+  background-color: rgb(15, 15, 75);
+  color: white;
+  width: 180px;
+  border: transparent;
+  border-radius: 5px;
+}
+body .main-body .btn .btn-signup {
+  padding: 20px;
+  color: rgb(15, 15, 75);
+  background-color: transparent;
+  width: 180px;
+  border: 1px solid rgb(15, 15, 75);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    margin: 0;
+  }
+  body .nav {
+    display: none;
+  }
+  body .nav-img {
+    display: block;
+  }
+  body .main-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 60vh;
+  }
+  body .main-body img {
+    width: 250px;
+  }
+  body .main-body .btn {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    justify-content: space-between;
+  }
+  body .main-body .btn .btn-color {
+    padding: 17px;
+    background-color: rgb(15, 15, 75);
+    color: white;
+    width: 140px;
+    border: transparent;
+    border-radius: 5px;
+  }
+  body .main-body .btn .btn-signup {
+    padding: 17px;
+    color: rgb(15, 15, 75);
+    background-color: transparent;
+    width: 140px;
+    border: 1px solid rgb(15, 15, 75);
+    border-radius: 5px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

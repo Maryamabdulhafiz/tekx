@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  // margin: 25px;
+  width: 100%;
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 50px;
+    box-shadow: 1px 1px 5px 5px #dedede;
+
+    .search-bar {
+      position: relative;
+
+      #input {
+        width: 25rem;
+        height: 30px;
+        background-color: gainsboro;
+        border: transparent;
+        border-radius: 10px;
+        margin-top: 10px;
+        padding-top: 15px;
+      }
+    }
+    svg {
+      position: absolute;
+      top: -14%;
+      width: 20px;
+      left: 1rem;
+    }
+    .half-nav {
+      display: flex;
+      justify-content: space-evenly;
+      width: 50%;
+    }
+    .logo {
+      width: 120px;
+      height: 50px;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 15px;
+      font-weight: bold;
+      padding-right: 20px;
+    }
+  }
+  .nav-img {
+    display: none;
+  }
+
+  .main-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+    img {
+      width: 25rem;
+    }
+    .btn {
+      display: flex;
+      flex-direction: row;
+      width: 25rem;
+      justify-content: space-between;
+      margin-top: 25px;
+
+      .btn-color {
+        padding: 20px;
+        background-color: rgb(15, 15, 75);
+        color: white;
+        width: 180px;
+        border: transparent;
+        border-radius: 5px;
+      }
+      .btn-signup {
+        padding: 20px;
+        color: rgb(15, 15, 75);
+        background-color: transparent;
+        width: 180px;
+        border: 1px solid rgb(15, 15, 75);
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    margin: 0;
+    .nav {
+      display: none;
+    }
+    .nav-img {
+      display: block;
+    }
+
+    .main-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 60vh;
+
+      img {
+        width: 250px;
+      }
+
+      .btn {
+        display: flex;
+        flex-direction: row;
+        width: 300px;
+        justify-content: space-between;
+
+        .btn-color {
+          padding: 17px;
+          background-color: rgb(15, 15, 75);
+          color: white;
+          width: 140px;
+          border: transparent;
+          border-radius: 5px;
+        }
+        .btn-signup {
+          padding: 17px;
+          color: rgb(15, 15, 75);
+          background-color: transparent;
+          width: 140px;
+          border: 1px solid rgb(15, 15, 75);
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
