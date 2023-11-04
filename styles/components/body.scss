@@ -87,6 +87,7 @@ body {
         border: 1px solid rgb(15, 15, 75);
         border-radius: 5px;
       }
+     
     }
   }
 }
@@ -113,26 +114,16 @@ body {
       }
 
       .btn {
-        display: flex;
-        flex-direction: row;
         width: 300px;
         justify-content: space-between;
 
         .btn-color {
           padding: 17px;
-          background-color: rgb(15, 15, 75);
-          color: white;
-          width: 140px;
-          border: transparent;
-          border-radius: 5px;
+        
         }
         .btn-signup {
           padding: 17px;
-          color: rgb(15, 15, 75);
-          background-color: transparent;
-          width: 140px;
-          border: 1px solid rgb(15, 15, 75);
-          border-radius: 5px;
+         
         }
       }
     }
