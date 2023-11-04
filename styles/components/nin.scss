@@ -28,7 +28,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        
+        .authentication-img{
+            display: none;
+        }
         p{
             font-size: 25px;
         }
@@ -60,77 +63,69 @@
 }
 
 
-@media screen and (max-width: 700px) {
-    body {
-      margin: 0;
-      .nav {
-        display: none;
-      }
-      .nav-img {
-        display: block;
-      }
-  
-      .whole-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-   
-    width: 100%;
-    height: 50vh;
 
-    .authentication{
-     align-items: center;
-     justify-content: center;
-
-     .label{
+@media screen and (max-width:700px) {
+    .nav{
+       display: none;
+    }
+    .whole-body{
         display: flex;
-        flex-direction: column;
-        width: 60%;
-        margin: 50px;
-     }
-     
-        .input{
-            padding: 20px;
-            margin-top: 10px;
-            width: 400px;
-           }
-
-           p{
-            font-size: 25px;
-            margin: 20px;
-        }
-    }
-    
-    .hr{
-        display: none;
-    }
-    .main-body{
+        width: 100%;
         
-
-        .note{
-            display: none;
+        .hr{
+            margin-top: 50px;
         }
-    }
-  
-        img {
-          width: 150px;
+        .main-body{
+           display: none;
+    
+            .note{
+                width: 40%;
+                text-align: center;
+            }
         }
-  
-        .btn {
-          width: 300px;
-          justify-content: space-between;
-  
-          .btn-color {
-            padding: 17px;
-          
-          }
-          .btn-signup {
-            padding: 17px;
+        .authentication{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            .authentication-img{
+                display: flex;
+                width: 120px;
+                margin-bottom: 50px;
+              
+            }
+            p{
+                font-size: 20px;
+            }
+            .label{
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+                margin: 50px;
+            }
+    
+           .input{
+            padding: 10px;
+            margin-top: 10px;
+           }
+           .btn{
+            padding: 15px;
+            width: 150px;
+            border-radius: 5px;
+            background-color: rgb(15, 15, 75);
+            color: white;
+            
+           }
+            .btn:hover{
+                background-color:rgb(15, 15, 75) ;
+                color: white;
+            }
            
-          }
         }
-      }
     }
-  }
-  
+}
+
+
+

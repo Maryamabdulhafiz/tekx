@@ -145,6 +145,9 @@ body .main-body .btn .btn-signup {
   justify-content: center;
   align-items: center;
 }
+.whole-body .authentication .authentication-img {
+  display: none;
+}
 .whole-body .authentication p {
   font-size: 25px;
 }
@@ -171,60 +174,58 @@ body .main-body .btn .btn-signup {
 }
 
 @media screen and (max-width: 700px) {
-  body {
-    margin: 0;
-  }
-  body .nav {
+  .nav {
     display: none;
   }
-  body .nav-img {
-    display: block;
+  .whole-body {
+    display: flex;
+    width: 100%;
   }
-  body .whole-body {
+  .whole-body .hr {
+    margin-top: 50px;
+  }
+  .whole-body .main-body {
+    display: none;
+  }
+  .whole-body .main-body .note {
+    width: 40%;
+    text-align: center;
+  }
+  .whole-body .authentication {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 50vh;
-  }
-  body .whole-body .authentication {
-    align-items: center;
     justify-content: center;
+    align-items: center;
   }
-  body .whole-body .authentication .label {
+  .whole-body .authentication .authentication-img {
+    display: flex;
+    width: 120px;
+    margin-bottom: 50px;
+  }
+  .whole-body .authentication p {
+    font-size: 20px;
+  }
+  .whole-body .authentication .label {
     display: flex;
     flex-direction: column;
     width: 60%;
     margin: 50px;
   }
-  body .whole-body .authentication .input {
-    padding: 20px;
+  .whole-body .authentication .input {
+    padding: 10px;
     margin-top: 10px;
-    width: 400px;
   }
-  body .whole-body .authentication p {
-    font-size: 25px;
-    margin: 20px;
-  }
-  body .whole-body .hr {
-    display: none;
-  }
-  body .whole-body .main-body .note {
-    display: none;
-  }
-  body .whole-body img {
+  .whole-body .authentication .btn {
+    padding: 15px;
     width: 150px;
+    border-radius: 5px;
+    background-color: rgb(15, 15, 75);
+    color: white;
   }
-  body .whole-body .btn {
-    width: 300px;
-    justify-content: space-between;
-  }
-  body .whole-body .btn .btn-color {
-    padding: 17px;
-  }
-  body .whole-body .btn .btn-signup {
-    padding: 17px;
+  .whole-body .authentication .btn:hover {
+    background-color: rgb(15, 15, 75);
+    color: white;
   }
 }
 
