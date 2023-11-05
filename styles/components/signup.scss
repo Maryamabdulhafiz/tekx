@@ -3,17 +3,16 @@
   width: 100%;
   height: 90vh;
 
-  p{
-    display: none;
-}
-
 
   .hr {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .authentication-image{
+        display: none;
+    }
 
-  .main {
+.main {
     width: 50%;
     height: 100%;
     display: flex;
@@ -21,56 +20,54 @@
     align-items: center;
     flex-direction: column;
     img {
-      width: 500px;
+        width: 500px;
     }
-  }
+}
 
-  .note-sign {
+.note-sign {
     text-align: center;
     color: $primary-color;
-  }
+}
 
-  .signup-authentication {
+
+.signup-authentication {
     height: 90%;
     display: flex;
     width: 50%;
     background-color: rgb(234, 234, 234);
     margin: 50px;
     border-radius: 20px;
-
+    
     .inputs {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      width: 50vw;
-
-      .label {
-        margin-left: 30px;
-      }
-
-      .input-field {
-        width: 45em;
-        margin: 20px;
-        padding: 10px;
-        border: none;
-        border-bottom: 1px solid grey;
-        background-color: transparent;
-      }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 50vw;
+        
+        .label {
+            margin-left: 30px;
+        }
+        
+        .input-field {
+            width: 45em;
+            margin: 20px;
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid grey;
+            background-color: transparent;
+        }
     }
-
-    img {
-      display: none;
-    }
+    
     .btn {
-      padding: 20px;
-      width: 150px;
-      border-radius: 5px;
-      background-color: rgb(15, 15, 75);
-      color: white;
-      margin-top: 50px;
+        padding: 20px;
+        width: 150px;
+        border-radius: 5px;
+        background-color: rgb(15, 15, 75);
+        color: white;
+        margin-top: 50px;
     }
-  }
+}
 }
 
 
@@ -88,7 +85,7 @@
             .hr{
                 display: none;
             }
-            .authentication-img{
+            .authentication-image{
                 display: flex;
                 margin-left: 10rem;
                 margin-bottom: 30px;
@@ -122,7 +119,7 @@
                         //     display: block;
                         //     margin-bottom: 80px;
                         //     margin-left: 30px;
-                        // }
+                        // }si
                         
                         .label {
                             margin-left: 10px;

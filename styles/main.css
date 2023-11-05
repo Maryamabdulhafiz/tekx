@@ -131,10 +131,10 @@ body .main-body .btn .btn-signup {
 .whole-body .hr {
   margin-top: 50px;
 }
-.whole-body .main-body {
+.whole-body .main-nin-body {
   width: 50%;
 }
-.whole-body .main-body .note {
+.whole-body .main-nin-body .note {
   width: 40%;
   text-align: center;
 }
@@ -233,12 +233,12 @@ body .main-body .btn .btn-signup {
   width: 100%;
   height: 90vh;
 }
-.whole p {
-  display: none;
-}
 .whole .hr {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+.whole .authentication-image {
+  display: none;
 }
 .whole .main {
   width: 50%;
@@ -281,9 +281,6 @@ body .main-body .btn .btn-signup {
   border-bottom: 1px solid grey;
   background-color: transparent;
 }
-.whole .signup-authentication img {
-  display: none;
-}
 .whole .signup-authentication .btn {
   padding: 20px;
   width: 150px;
@@ -306,7 +303,7 @@ body .main-body .btn .btn-signup {
   .whole .hr {
     display: none;
   }
-  .whole .authentication-img {
+  .whole .authentication-image {
     display: flex;
     margin-left: 10rem;
     margin-bottom: 30px;
