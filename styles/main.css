@@ -1,17 +1,357 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 3 | @import '.components/signup';
- *   |         ^^^^^^^^^^^^^^^^^^^^
- *   '
- *   styles/main.scss 3:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 3 \2502  @import '.components/signup';\a   \2502          ^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   styles/main.scss 3:9  root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  width: 100%;
+}
+body .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 50px;
+  box-shadow: 1px 1px 5px 5px #dedede;
+}
+body .nav .search-bar {
+  position: relative;
+}
+body .nav .search-bar #input {
+  width: 25rem;
+  height: 30px;
+  background-color: gainsboro;
+  border: transparent;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding-top: 15px;
+}
+body .nav svg {
+  position: absolute;
+  top: -14%;
+  width: 20px;
+  left: 1rem;
+}
+body .nav .half-nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+body .nav .logo {
+  width: 120px;
+  height: 50px;
+}
+body .nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  padding-right: 20px;
+}
+body .nav-img {
+  display: none;
+}
+body .main-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+body .main-body img {
+  width: 25rem;
+}
+body .main-body .btn {
+  display: flex;
+  flex-direction: row;
+  width: 25rem;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+body .main-body .btn .btn-color {
+  padding: 20px;
+  background-color: rgb(15, 15, 75);
+  color: white;
+  width: 180px;
+  border: transparent;
+  border-radius: 5px;
+}
+body .main-body .btn .btn-signup {
+  padding: 20px;
+  color: rgb(15, 15, 75);
+  background-color: transparent;
+  width: 180px;
+  border: 1px solid rgb(15, 15, 75);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    margin: 0;
+  }
+  body .nav {
+    display: none;
+  }
+  body .nav-img {
+    display: block;
+  }
+  body .main-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 60vh;
+  }
+  body .main-body img {
+    width: 250px;
+  }
+  body .main-body .btn {
+    width: 300px;
+    justify-content: space-between;
+  }
+  body .main-body .btn .btn-color {
+    padding: 17px;
+  }
+  body .main-body .btn .btn-signup {
+    padding: 17px;
+  }
+}
+.nav .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+
+.whole-body {
+  display: flex;
+  width: 100%;
+}
+.whole-body .hr {
+  margin-top: 50px;
+}
+.whole-body .main-body {
+  width: 50%;
+}
+.whole-body .main-body .note {
+  width: 40%;
+  text-align: center;
+}
+.whole-body .authentication {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.whole-body .authentication .authentication-img {
+  display: none;
+}
+.whole-body .authentication p {
+  font-size: 25px;
+}
+.whole-body .authentication .label {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 50px;
+}
+.whole-body .authentication .input {
+  padding: 10px;
+  margin-top: 10px;
+}
+.whole-body .authentication .btn {
+  padding: 15px;
+  width: 150px;
+  border-radius: 5px;
+  background-color: rgb(15, 15, 75);
+  color: white;
+}
+.whole-body .authentication .btn:hover {
+  background-color: rgb(15, 15, 75);
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .nav {
+    display: none;
+  }
+  .whole-body {
+    display: flex;
+    width: 100%;
+  }
+  .whole-body .hr {
+    margin-top: 50px;
+  }
+  .whole-body .main-body {
+    display: none;
+  }
+  .whole-body .main-body .note {
+    width: 40%;
+    text-align: center;
+  }
+  .whole-body .authentication {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .whole-body .authentication .authentication-img {
+    display: flex;
+    width: 120px;
+    margin-bottom: 50px;
+  }
+  .whole-body .authentication p {
+    font-size: 20px;
+  }
+  .whole-body .authentication .label {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 50px;
+  }
+  .whole-body .authentication .input {
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .whole-body .authentication .btn {
+    padding: 15px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: rgb(15, 15, 75);
+    color: white;
+  }
+  .whole-body .authentication .btn:hover {
+    background-color: rgb(15, 15, 75);
+    color: white;
+  }
+}
+.whole {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+}
+.whole p {
+  display: none;
+}
+.whole .hr {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.whole .main {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.whole .main img {
+  width: 500px;
+}
+.whole .note-sign {
+  text-align: center;
+  color: rgb(15, 15, 75);
+}
+.whole .signup-authentication {
+  height: 90%;
+  display: flex;
+  width: 50%;
+  background-color: rgb(234, 234, 234);
+  margin: 50px;
+  border-radius: 20px;
+}
+.whole .signup-authentication .inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50vw;
+}
+.whole .signup-authentication .inputs .label {
+  margin-left: 30px;
+}
+.whole .signup-authentication .inputs .input-field {
+  width: 45em;
+  margin: 20px;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid grey;
+  background-color: transparent;
+}
+.whole .signup-authentication img {
+  display: none;
+}
+.whole .signup-authentication .btn {
+  padding: 20px;
+  width: 150px;
+  border-radius: 5px;
+  background-color: rgb(15, 15, 75);
+  color: white;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 700px) {
+  .nav {
+    display: none;
+  }
+  .whole {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  .whole .hr {
+    display: none;
+  }
+  .whole .authentication-img {
+    display: flex;
+    margin-left: 10rem;
+    margin-bottom: 30px;
+    width: 60px;
+  }
+  .whole .main {
+    display: none;
+  }
+  .whole .main .note-sign {
+    width: 40%;
+    text-align: center;
+  }
+  .whole .signup-authentication {
+    width: 60%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+  }
+  .whole .signup-authentication .inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .whole .signup-authentication .inputs .label {
+    margin-left: 10px;
+  }
+  .whole .signup-authentication .inputs .input-field {
+    width: 18em;
+    margin: 12px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid grey;
+    background-color: transparent;
+  }
+  .whole .signup-authentication .btn {
+    padding: 15px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: rgb(15, 15, 75);
+    color: white;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
