@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TekX</title>
-    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/main.css"/>
+    <script defer src="script.js"></script>
   </head>
   <body>
     <nav class="nav">
@@ -46,17 +47,42 @@
           <input type="search" name="" id="input" />
         </div>
       </div>
+      <div class="links">
+      <a href="">Sign in</a>
       <a href="">Sign out</a>
+    </div>
     </nav>
     <div class="nav-img">
-      <img src="assets/shadow.jpeg" alt="">
+      <img src="assets/shadow-removebg-preview.png" alt="">
     </div>
-    <div class="main-body">
+    <div class="whole">
+    <section class="main">
       <img src="assets/logo-removebg-preview.png" alt="" />
-      <div class="btn">
-        <a href="nin.html"><button class="btn-color">SIGN IN</button></a>
-        <a href="signup.html"><button class="btn-signup">SIGN UP</button></a>
+      <div class="note-sign">
+        <h2>SIGN UP</h2>
       </div>
-    </div>
+    </section>
+     <hr class="hr">
+    <img src="assets/logo-removebg-preview.png" alt="" class="authentication-image"/> 
+    <div id="error"></div>
+    <form action="/index.html" id="form" class="signup-authentication">
+        <div class="inputs">
+       <div class="label">
+            <label for="email" class="label">Email </label>
+            <input type="email" id="email" placeholder="adc@gmail.com" class="input-field" required placeholder="Email">
+        </div>
+        <div class="label">
+            <label for="password" class="label">Password</label>
+            <input type="password" placeholder="***************" id="password" class="input-field" required minlength="6">
+        </div>
+        <div class="label">
+            <label for="password" class="label">Confirm password</label>
+            <input type="password" placeholder="***************" id="confirmpassword" class="input-field"  required minlength="6">
+        </div>
+            <a href="./index.html"><button type="submit" class="btn">SIGN UP</button></a>
+        </div>
+  </form>
+  </div> 
+  
   </body>
 </html>
